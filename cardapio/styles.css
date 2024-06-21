@@ -1,0 +1,117 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/fruit-background.jpg);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.established {
+    font-style: italic;
+    text-align: center;
+}
+
+.menu {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.frutas-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+.item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.flavor {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FF4500;
+}
+
+hr.bottom-line {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid brown;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.address {
+    margin-top: 5px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: brown;
+}
